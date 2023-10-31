@@ -10,7 +10,4 @@ btn.addEventListener("click", function() {
         console.log("Non sei autorizzato")
     }
 
-
-    }
-
-);
+});
