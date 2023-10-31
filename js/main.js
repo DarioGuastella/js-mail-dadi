@@ -3,11 +3,10 @@ const btn = document.getElementById("emailBtn");
 
 btn.addEventListener("click", function() {
     const userEmail = document.getElementById("userEmail").value;
-    console.log(userEmail);
+    const title = document.getElementById("title");
     if (registeredEmail.includes(userEmail,0)){
-        console.log("Sei autorizzato");
+        title.innerHTML = "Sei autorizzato";
     } else {
-        console.log("Non sei autorizzato")
+        title.innerHTML = "Non sei autorizzato";
     }
-
 });
