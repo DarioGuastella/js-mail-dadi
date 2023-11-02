@@ -9,8 +9,11 @@ btn.addEventListener("click", function() {
     if (playerNumber > pcNumber) {
         document.getElementById("endGame").innerHTML = ("Hai vinto!");
         document.getElementById("endGame").style.color = "green";
-    } else {
+    } else if (playerNumber < pcNumber){
         document.getElementById("endGame").innerHTML = ("Hai perso!");
         document.getElementById("endGame").style.color = "red";
+    } else {
+        document.getElementById("endGame").innerHTML = ("Pareggio!");
+        document.getElementById("endGame").style.color = "inherit";
     }
 });
